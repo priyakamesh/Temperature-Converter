@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temperature Converter</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Temperature Converter</h1>
+		<form>
+		<!-- input field -->
+			<label>Temperature <input type="number" id="temp"></label>
+			<!-- radio buttons -->
+			<label><input type="radio" name="selection" value="Celsius" id="Celsius">Celsius</label>
+			<label><input type="radio" name="selection" value="Fahrenheit" id="Fahrenheit">Fahrenheit</label>
+		
+		<div>
+		<!-- button displays the converted temperatre -->
+		<button name="button" value="Show Output" id="converter">Convert</button>
+		<!-- clear button -->
+		<button type = "reset" name="button" value="reset">Clear</button>
+		</div>
+		<h3>Converted Temperature is</h3>
+		<div  id="output-temp">
+		<input type="text" size= "25" id="box">
+		</div>
+		</form>
+	</div>
+<script type="text/javascript" src="converter.js"></script>
+</body>
+</html>
